@@ -94,7 +94,9 @@ a {
     color: #000000bb;
     text-align: center;
 }
-.site-header_title span{
+
+
+.site-header_title span {
     color: #000000;
 }
 
@@ -105,7 +107,7 @@ a {
 
 .header-btn {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     border: none;
     padding: 15px 30px;
     background-color: #e9b10d;
@@ -113,6 +115,25 @@ a {
     border: 1px solid #007A39;
     cursor: pointer;
 
+}
+
+@media only screen and (max-width: 500px) {
+    .site-header{
+        background-size: content;
+    }
+    .site-header_title {
+        max-width: 300px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .site-link {
+        font-size: 17px;
+    }
+
+    .header-btn {
+        padding: 10px 20px;
+    }
 }
 
 /* HEADER STYLE END */
