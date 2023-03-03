@@ -1,0 +1,193 @@
+/* ROOT */
+/* :root{ */
+/* --header-bg-color: #fff; */
+/* --main-bg-color: #fff; */
+/* --main-text-color: #fff; */
+/* } */
+
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    background-image: url('../images/Taj_Mahal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-header_link {
+    color: #14a828;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.area-text {
+    text-align: center;
+}
+
+.region {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0000009a;
+}
+
+.btn {
+    margin: 0;
+    padding: 10px 30px;
+    border: none;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 10px;
+    min-width: 150px;
+    background-color: #ffffff8e;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #000000;
+}
+
+
+.card-start {
+    margin-top: 0;
+    border-bottom: 1px solid #000000;
+
+}
+
+.text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+    opacity: .9;
+}
+
+.present-time {
+    margin-bottom: 0;
+    font-size: 38px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #000000cb;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+    .site-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .site-header_link {
+        margin-top: 2px;
+        font-size: 16px;
+    }
+
+    .cards {
+        gap: 30px;
+    }
+
+    .card {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .text {
+        min-width: 100px;
+        ;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        font-size: 20px;
+
+    }
+
+    .present-time {
+        font-size: 30px;
+    }
+}
